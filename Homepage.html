@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="loginform.css" rel="stylesheet" />
+    <link href="Modelwindowlogin.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CDKHackathon</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">RentMyCar</a></li>
+                <li><a href="#">Request Car</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li onclick="document.getElementById('id02').style.display='block'"><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li onclick="document.getElementById('id01').style.display='block'"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <!--Login Model Window-->
+    <div id="id01" class="modal">
+        
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+          <center> 
+              <h2>Login Form</h2>
+              <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+             <div class="imgcontainer">
+                <img src="http://bestanimations.com/Transport/Cars/luxury-car-animated-gif-4.gif" class="img-circle" width="304" height="236">
+            </div> </center>
+      
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                   <!-- <button type="submit">Login</button>-->
+                    <center>  <button type="button" class="cancelbtn">Login</button> </center>
+                    
+                    
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+
+                <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>           
+    </div>
+    
+    <!--Register Model Window-->
+    <div id="id02" class="modal">
+
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <center>
+                <h2>Just one Step Ahead To Login</h2>
+                <span onclick="document.getElementById('id02').style.display='none'"
+                      class="close" title="Close Modal">&times;</span>
+                <div class="imgcontainer">
+                    <img src="http://bestanimations.com/Transport/Cars/luxury-car-animated-gif-4.gif" class="img-circle" width="304" height="156">
+                </div>
+            </center>
+
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>ID Proof/Driving Liecense</b></label>
+                <input type="text" placeholder="IDProof" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <!-- <button type="submit">Login</button>-->
+                <center>  <button type="button" class="cancelbtn">Register</button> </center>     
+            </div>
+            <div class="container">
+                <button type="button" class="cancelbtn">Cancel</button>
+                
+            </div>
+        </form>
+    </div>
+  <!--  <div class="xyz">
+        <img src="http://bestanimations.com/Transport/Cars/luxury-car-animated-gif-4.gif" width="1700" height="600" />
+    </div> -->
+
+</body>
+</html>
